@@ -1,0 +1,16 @@
+.stopWatch {
+  margin: auto;
+  width: 60%;
+  
+  padding: 10px;
+}
+body {
+  background-color: rgb(1, 13, 17);
+  color: orange;
+}
+
+div {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
