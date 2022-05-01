@@ -1,0 +1,27 @@
+<html>
+  <body>
+   
+    <%- include("partials/headers.ejs") %>
+
+  
+    <button>
+  
+    <form method="post" action="/todo">
+      <input name="todo" placeholder="add todo"/>
+      <input type="submit" value="save"/>
+    </form>
+
+    <ul>
+      <% for( var i=0; i< data.length; i++ ){ %>
+
+        <li> <%= data[i].todo %> <%= data[i].isfav %> </li>
+        <form method="post" action="/todo/fav/<%= data[i].todo %>" >
+          <input type="submit" value="✔"/>
+        </form>
+        
+      <% } %>
+    </ul>
+    
+  </body>
+
+</html>
